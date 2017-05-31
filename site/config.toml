@@ -46,8 +46,8 @@ paginate = 10
 
 	[params.about]
 		hide  = false
-		title = "Ipsum lorem dolor aliquam ante commodo magna sed accumsan arcu neque."
-		content = "Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia."
+		title = "Get to know Dave walsh"
+		content = "I am a senior lecturer in Web design and development at Edge Hill University. This site is a reflection of my own thoughts and feelings and has nothing todo with Edge Hill! I have been tinkering with the web since it started. My passion is to enable people. Especially studnets with getting interested in the web and the people who make it what it is but also the technogoly. As there is not enough room in any curriculum for everything the web has to offer in terms of design, development and UX, I created this blog where I and guest bloggers can produce tutorials and series of tutorials to learn what industry experts think graduates should know. So go on get in touch and create your own tutorial for this blog."
 
 
 	[params.portfolio]
@@ -99,7 +99,7 @@ paginate = 10
 	[params.contact]
 		hide  = true
 		title = "Get In Touch"
-		content = "Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor."
+		content = "Interested in creating a blog? found an issue with this site? then get in touch."
 
 		address = [
 			"Not for you",
