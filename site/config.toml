@@ -1,8 +1,8 @@
-baseurl = "/"
+baseurl = "https://davewalsh.netlify.com/"
 languageCode = "en-us"
 title = "Dave Walsh blog"
 theme = "hugo-strata-theme"
-disqusShortname = ""
+# disqusShortname = ""
 # Enable Google Analytics by inserting your tracking code
 googleAnalytics = ""
 # Define how many posts should appear on a site
@@ -97,7 +97,7 @@ paginate = 10
 		title = "Recent blog posts"
 
 	[params.contact]
-		hide  = false
+		hide  = true
 		title = "Get In Touch"
 		content = "Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor."
 
