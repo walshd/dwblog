@@ -2,7 +2,7 @@ baseurl = "/"
 languageCode = "en-us"
 title = "Dave Walsh blog"
 theme = "hugo-strata-theme"
-disqusShortname = "spf13"
+disqusShortname = ""
 # Enable Google Analytics by inserting your tracking code
 googleAnalytics = ""
 # Define how many posts should appear on a site
@@ -137,7 +137,7 @@ paginate = 10
 
 [[menu.main]]
     name = "About"
-    url  = "about"
+    url  = "about/"
     weight = 5
 
 [[menu.main]]
