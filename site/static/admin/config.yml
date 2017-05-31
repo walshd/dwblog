@@ -1,0 +1,4 @@
+backend:
+  name: github
+  repo: walshd/dwblog # Path to your Github repository
+  branch: master # Branch to update
