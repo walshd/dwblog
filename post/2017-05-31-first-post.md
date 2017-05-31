@@ -8,3 +8,4 @@ rating: '1'
 # This is the first post using netlify cms
 
 awsome!!!
+
