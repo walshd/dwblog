@@ -80,7 +80,7 @@ gulp.task("server", ["hugo", "css", "js", "svg", "cms"], () => {
   });
   gulp.watch("./src/js/**/*.js", ["js"]);
   gulp.watch("./src/css/**/*.css", ["css"]);
-  gulp.watch("./src/cms/*", ["cms']);
+  gulp.watch("./src/cms/*", ["cms"]);
   gulp.watch("./site/static/images/icons/*.svg", ["svg"]);
   gulp.watch("./site/**/*", ["hugo"]);
 });
