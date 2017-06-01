@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "hugo": "gulp hugo",
-    # "webpack": "gulp webpack",
     "build": "gulp build",
     "build-preview": "gulp build-preview",
     "start": "gulp server",
@@ -25,8 +24,6 @@
     "babel-register": "^6.11.6",
     "browser-sync": "^2.13.0",
     "css-loader": "^0.28.2",
-    "cssnano": "^3.9.1",
-    "date-fns": "^1.27.2",
     "eslint": "^3.1.1",
     "eslint-plugin-import": "^1.11.1",
     "exports-loader": "^0.6.3",
@@ -41,12 +38,10 @@
     "postcss-cssnext": "^2.7.0",
     "postcss-import": "^10.0.0",
     "postcss-loader": "^2.0.5",
-    "postcss-uncss": "^0.14.0",
-    "uncss": "^0.14.1",
     "url-loader": "^0.5.7",
     "webpack": "^2.6.0",
     "whatwg-fetch": "^1.0.0"
-  }
+  },
   "devDependencies": {
     "gulp-inject": "^4.2.0",
     "gulp-svgmin": "^1.2.3",
