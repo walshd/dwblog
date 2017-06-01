@@ -32,7 +32,7 @@ gulp.task("cms", () => {
     .pipe(browserSync.stream());
 });
 
-gulp.task("build", ["css", "js", "hugo", "cms"]);
+gulp.task("build", ["css", "js", "hugo"]);
 gulp.task("build-preview", ["css", "js", "hugo-preview"]);
 
 gulp.task("css", () => (
