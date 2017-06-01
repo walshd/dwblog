@@ -11,11 +11,11 @@ import svgstore from "gulp-svgstore";
 import svgmin from "gulp-svgmin";
 import inject from "gulp-inject";
 import replace from "gulp-replace";
-// import cssnano from "cssnano";
+import cssnano from "cssnano";
 
 const browserSync = BrowserSync.create();
 const hugoBin = `./bin/hugo.${process.platform === "win32" ? "exe" : process.platform}`;
-const defaultArgs = ["-d", "../dist", "-s", "site", "-v"];
+const defaultArgs = ["-d", "../dist", "-s", "site"];
 
 gulp.task("hugo", (cb) => buildSite(cb));
 gulp.task("hugo-preview", (cb) => buildSite(cb, ["--buildDrafts", "--buildFuture"]));
@@ -37,7 +37,11 @@ gulp.task("build-preview", ["css", "js", "hugo-preview"]);
 
 gulp.task("css", () => (
   gulp.src("./src/css/*.css")
-    .pipe(postcss([cssImport({from: "./src/css/main.css"}), cssnext()]))
+    .pipe(postcss([
+      cssImport({from: "./src/css/main.css"}),
+      cssnext(),
+      cssnano(),
+    ]))
     .pipe(gulp.dest("./dist/css"))
     .pipe(browserSync.stream())
 ));
@@ -81,7 +85,7 @@ gulp.task("server", ["hugo", "css", "js", "svg", "cms"], () => {
   gulp.watch("./src/js/**/*.js", ["js"]);
   gulp.watch("./src/css/**/*.css", ["css"]);
   gulp.watch("./src/cms/*", ["cms"]);
-  gulp.watch("./site/static/images/icons/*.svg", ["svg"]);
+  gulp.watch("./site/static/img/icons/*.svg", ["svg"]);
   gulp.watch("./site/**/*", ["hugo"]);
 });
 
@@ -90,7 +94,7 @@ function buildSite(cb, options) {
 
   return cp.spawn(hugoBin, args, {stdio: "inherit"}).on("close", (code) => {
     if (code === 0) {
-      browserSync.reload();
+      browserSync.reload("notify:false");
       cb();
     } else {
       browserSync.notify("Hugo build failed :(");
