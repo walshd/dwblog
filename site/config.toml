@@ -1,4 +1,4 @@
-baseurl = "https://davewalsh.netlify.com/"
+baseurl = "/"
 languageCode = "en-us"
 title = "Dave Walsh blog"
 theme = "hugo-strata-theme"
